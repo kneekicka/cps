@@ -1,0 +1,140 @@
+.searching{
+	background-color: #fafafa;
+	padding-top: 60px;
+	min-height: 550px;
+
+	&__title{
+		font-family: OpenSans-Bold, sans-serif;
+		text-transform: uppercase;
+		font-size: 1.875rem;
+		color: $blueSecond;
+		padding-top: 3px;
+	}
+
+	&__found-qtt{
+		font-family: OpenSans-SemiBold, sans-serif;
+		font-size: 0.875rem;
+		color: $blueSecond;
+		margin-top: 22px;
+	}
+
+	article{
+		background-color: #fafafa !important;
+
+		h2{
+
+			margin-top: 50px;
+
+			a{
+				font-family: OpenSans-SemiBold, sans-serif;
+				font-size: 1.375rem;
+				color: $blueSecond;
+				text-decoration: none;
+
+				&:hover, &:active, &:link, &:visited{
+
+					text-decoration: none;
+
+				}
+			}
+
+		}
+
+		&:last-child{
+			margin-bottom: 120px;
+		}
+
+	}
+}
+
+.searching__content{
+	font-family: OpenSans-Regular, sans-serif;
+	color: $blueSecond;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin-top: 22px;
+}
+
+.searching__part{
+
+	font-family: OpenSans-SemiBold, sans-serif;
+	font-size: .875rem;
+	margin-top: 24px;
+
+	.red{
+		font-family: OpenSans-Regular, sans-serif;
+	}
+}
+
+.searching__no-res{
+	font-family: OpenSans-Regular, sans-serif;
+	font-size: 1rem;
+	line-height: 1.75rem;
+	color: $blueSecond;
+	margin: 20px 0 25px 0;
+}
+.searching__search-form{
+	margin-bottom: 70px;
+	overflow: hidden;
+	float: left;
+
+	.form-group{
+		float: left;
+	}
+	
+	input{
+
+		text-align: left;
+		float: left;
+		border: 1px solid #c9c9c9;
+		line-height: 42px;
+		width: 580px;
+		padding-left: 18px;
+		font-size: 1.125rem;
+		color: $blueSecond;
+		font-family: OpenSans-Regular, sans-serif;
+		background: none;
+
+		&::-webkit-input-placeholder {
+		  color: #9a9a9a;
+		}
+		&::-moz-placeholder {
+		  color: #9a9a9a;
+		}
+		&:-ms-input-placeholder {
+		  color: #9a9a9a;
+		}
+		&:-moz-placeholder {
+		  color: #9a9a9a;
+		}
+	}
+
+	button[type="submit"]{
+		display: block;
+		font-family: OpenSans-SemiBold, sans-serif;
+		color: #fff;
+		float: left;
+		line-height: 1.25rem;
+		margin-left: 10px;
+		height: 46px;
+		background-color: $red;
+		border: none;
+		border-radius: 3px;
+		padding: 0 37px;
+		outline: none;
+
+		&:hover{
+			background-color: #e23618;
+		}
+
+		&:active{
+			background-color: #c12b11;
+		}
+
+		&:hover, &:link, &:focus, &:visited{
+			text-decoration: none;
+			color: #fff;
+		}
+
+	}
+}

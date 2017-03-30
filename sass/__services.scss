@@ -1,0 +1,150 @@
+.services{
+	padding-top: 60px;
+
+	&__blocks{
+
+		.help{
+			display: block;
+			height: 120px;
+			width: 100%;
+			border: 1px solid #d6d6d6;
+			margin-top: 50px;
+			border-radius: 3px;
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+			text-decoration: none;
+			transition: all ease-in .3s;
+			background-color: #fff;
+
+			&:hover{
+				text-decoration: none;
+				box-shadow: inset 0px 0px 2px #43a5d1;
+				border: 1px solid #43a5d1;
+
+				h3, p{
+					color: #43a5d1;
+				}
+				
+			}
+
+			h3{
+				font-family: OpenSans-Bold, sans-serif;
+				color: $red;
+				font-size: 1.625rem;
+				text-align: center;
+				margin-top: 35px;
+				transition: all ease-in .3s;
+			} 
+
+			p{
+				font-family: OpenSans-SemiBold, sans-serif;
+				font-size: 0.8125rem;
+				color: $red;
+				margin-top: 20px;
+				text-transform: uppercase;
+				text-align: center;
+				transition: all ease-in .3s;
+			}
+		}
+	}
+
+	&__block{
+		width: 195px;
+		height: 195px;
+		border: 1px solid #d6d6d6;
+		background-color: #fff;
+		font-family: OpenSans-SemiBold, sans-serif;
+		border-radius: 3px;
+		margin-right: 40px;
+		display: block;
+		float: left;
+		transition: all ease-in .3s;
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+		padding: 0 5px;
+		text-decoration: none;
+
+		&:hover{
+			border: 1px solid #43a5d1;
+			cursor: pointer;
+			text-decoration: none;
+			box-shadow: inset 0px 0px 2px #43a5d1;
+
+			svg{
+				.st0{
+					fill: #43a5d1;
+				}
+			}
+
+			p{
+				color: #43a5d1;
+			}
+		}
+
+		&:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8){
+			margin-top: 50px;
+		}
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		svg{
+			width: 56px;
+			display: block;
+			margin: 65px auto 0;
+			transition: all ease-in .3s;
+			fill: $blueSecond;
+
+
+			.st0{
+				transition: all ease-in .3s;	
+			}
+		}
+
+		p{
+			font-family: OpenSans-SemiBold, sans-serif;
+			color: $blueSecond;
+			font-size: 0.8125rem;
+			line-height: 1.1875rem;
+			margin-top: 25px;
+			text-transform: uppercase;
+			transition: all ease-in .3s;
+			text-align: center;
+			transition: all ease-in .3s;
+		}
+
+		&:nth-child(4){
+			margin-right: 0;	
+		}
+
+	}
+}
+
+.services-wrapper{
+	background-color: #f4f5f9;
+
+	.main-wrapper{
+		background-color: #f4f5f9;
+	}
+	
+	.help{
+		margin-bottom: 100px;
+	}
+
+	.services{
+		padding-top: 0;
+	}
+
+	.contact-content{
+		margin: 35px 0 55px 0;
+		text-align: left;
+		font-family: OpenSans-SemiBold, sans-serif;
+
+		p{
+			margin: 0;
+			text-align: left;
+			font-size: 1rem;
+			line-height: 1.625rem;
+			font-family: OpenSans-SemiBold, sans-serif;
+		}
+	}
+}

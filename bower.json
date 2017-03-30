@@ -1,0 +1,23 @@
+{
+  "name": "uber",
+  "description": "It's a landing page for uber service in Odessa",
+  "main": "index.php",
+  "authors": [
+    "kneekicka"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "uber"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

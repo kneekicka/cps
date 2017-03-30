@@ -1,0 +1,109 @@
+.team{
+
+	background-color: #f4f5f9;
+
+	.main-wrapper{
+		background-color: #f4f5f9;
+	}
+
+	.team-wrapper{
+		margin-top: 40px;
+		margin-left: -15px;
+	    margin-right: -15px;
+	    margin-bottom: 0;
+	    padding: 0;
+	    border: 0;
+	    font: inherit;
+	    vertical-align: baseline;
+	    overflow: hidden;
+	    background-color: #f4f5f9;
+
+	}
+
+	.col-6{
+		margin: 100px auto 0;
+		
+		&:nth-child(1), &:nth-child(2){
+			margin: 0 auto;
+		}
+
+		&:last-child{
+			margin:  100px auto 80px;
+		}
+	}
+	
+	.team-member{
+		width: 361px;
+		margin: 0 auto;
+
+		&__photo{
+			width: 361px;
+			height: 454px;
+		}
+
+		&__name{
+			font-family: OpenSans-SemiBold, sans-serif;
+			font-size: 1.25rem;
+			color: $blueSecond;
+			text-align: center;
+			margin-top: 25px;
+
+			span{
+				font-style: italic;
+			}
+		}
+
+		&__practice{
+			margin-top: 27px;
+			font-size: 1rem;
+			color: #69696d;
+			font-family: OpenSans-SemiBold, sans-serif;
+			text-align: center;
+		}
+
+		&__practices{
+			font-family: OpenSans-SemiBold, sans-serif;
+			text-align: center;
+			font-size: 1rem;
+			line-height: 1.625rem;
+			color: $blueSecond;
+			margin-top: 10px;
+		}
+
+		&__more{
+			font-family: OpenSans-SemiBold, sans-serif;
+			color: rgba(55,53,70,.8);
+		    font-size: 1rem;
+		    line-height: 3.125rem;
+		    background-color: #f0f0f0;
+		    border: 1px solid #d4d4d4;
+		    border-radius: 3px;
+		    padding: 12px 37px;
+		    text-align: center;
+		    opacity: .8;
+			transition: all ease-in .3s;
+
+			&:hover, &:visited, &:link, &:active{
+				text-decoration: none;
+			}
+
+			&:hover{
+				border: 1px solid #f15135;
+				color: #f15135;
+				background-color: #fff;
+			}
+
+			&:active{
+				background-color: #e23618;
+				color: #fff;
+				border: 1px solid #e23618;
+			}
+		}
+
+		&__more-wrapper{
+			text-align: center;
+			margin-top: 30px;
+		}
+
+	}
+}

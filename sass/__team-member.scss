@@ -1,0 +1,63 @@
+.team-member{
+	
+	background-color: #f4f5f9;
+	/*padding-bottom: 125px;*/
+
+	.overall__logo{
+		margin: 60px 0 70px 0;
+	}
+
+	.team-member-content{
+		margin-left: 100px;
+
+		&__name{
+		    font-size: 1.25rem;
+		    color: #373646;
+		    font-family: OpenSans-Bold,sans-serif;
+		    text-align: left;
+		}
+
+		&__speciality{
+			font-family: OpenSans-SemiBold,sans-serif;
+			font-style: italic;
+			text-align: left;
+			font-size: 1rem;
+			margin-top: 12px;
+			color: $blueSecond;
+		}
+
+		&__practice{
+			margin-top: 20px;
+		    font-size: 1.125rem;
+		    color: #69696d;
+		    font-family: OpenSans-SemiBold,sans-serif;
+			text-align: left;
+		}
+
+		&__practices{
+		    font-family: OpenSans-SemiBold,sans-serif;
+		    font-size: 1rem;
+			line-height: 1.625rem;
+			color: $blueSecond;
+			margin-top: 5px;
+		}
+
+		&__exp, &__edu, &__langs{
+			@extend .team-member-content__practice;
+		}
+
+		&__exp-text, &__edu-text, &__langs-text{
+			@extend .team-member-content__practices;
+		}
+	}
+
+	&__img{
+		margin-bottom: 125px;
+	}
+}
+
+.blog-post__info, .team .team-member__name span{
+	font-family: OpenSans-SemiBold,sans-serif;
+	font-size: 1rem;
+	color: #69696d;
+}

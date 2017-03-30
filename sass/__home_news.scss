@@ -1,0 +1,143 @@
+.news{
+	margin-top: 120px;
+	margin-bottom: 100px;
+	
+	.logo-wrapper{
+		position: relative;
+		overflow: hidden;
+	}
+
+	.logo-line{
+
+		height: 230px;
+		width: 1px;
+		display: block;
+		margin: 0 auto;
+		background-color: #c1c1c1;
+	}
+
+	.logo{
+
+		position: relative;
+		overflow: hidden;
+		height: 48px;
+		margin: 22px 0;
+		background: url("../img/about/logo.svg") center center no-repeat;
+
+	}
+
+	h3.title{
+		text-align: center;
+		color: #343544;
+		font-size: 1.875rem;
+		font-family: OpenSans-Bold, sans-serif;
+		text-transform: uppercase;
+	}
+
+	.section{
+
+		margin-top: 50px;
+		text-align: left;
+
+		&__title{
+			font-family: OpenSans-SemiBold, sans-serif;
+			color: #28293d;
+			font-size: 1.2rem;
+		}
+
+		&__date{
+			margin-top: 18px;
+			font-family: OpenSans-SemiBold, sans-serif;
+			color: rgba(55, 53, 70, .9);
+			font-size: 0.875rem;
+		}
+
+		&__content{
+			margin-top: 15px;
+			font-family: OpenSans-SemiBold, sans-serif;
+			color: $blueSecond;
+			font-size: 0.875rem;
+			line-height: 1.5rem;
+			margin-bottom: 25px;
+			opacity: .8;
+		}
+
+		&__more{
+			font-family: OpenSans-SemiBold, sans-serif;
+			color: rgba(55, 53, 70, .8);
+			font-size: 0.875rem; 
+			line-height: 1.5rem;
+			background-color: #f0f0f0;
+			border: 1px solid #d4d4d4;
+			border-radius: 3px;
+			padding: 6px 20px;
+			text-decoration: none;
+			transition: all ease-in .3s;
+
+			&:hover, &:visited, &:link, &:active{
+				text-decoration: none;
+			}
+			&:hover{
+				border: 1px solid #f15135;
+				color: #f15135;
+				background-color: #fff;
+			}
+			&:active{
+				background-color: #e23618;
+				color: #fff;
+				border: 1px solid #e23618;
+			}
+		}
+	}
+
+	.see-all-wrapper{
+		padding-bottom: 3px;
+	}
+
+	.see-all{
+		margin-top: 50px;
+		font-family: OpenSans-SemiBold, sans-serif;
+		font-size: 1rem;
+		color: #27263b;
+		text-decoration: none;
+		display: inline-block;
+		padding-bottom: 2px;
+		transition: all ease-in .3s;
+
+		&:hover, &:visited, &:link, &:active{
+			text-decoration: none;
+		}
+		
+		.see-all-link{
+			border-bottom: 1px solid rgba(55, 53, 70, .5);
+			transition: all ease-in .3s;
+		}
+
+		.see-all-arrow{
+			transition: all ease-in .3s;
+		}
+
+
+		&:hover{
+			.see-all-link{
+				color: #f15135;
+				border-bottom: 1px solid #f15135;
+			}
+			.see-all-arrow{
+				color: $red;
+			}
+
+		}
+
+		&:active{
+			.see-all-link{
+				color: $red;
+				border-bottom: 1px solid $red;
+			}
+			.see-all-arrow{
+				color: $red;
+			}
+
+		}
+	}
+}

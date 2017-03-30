@@ -1,0 +1,126 @@
+footer{
+	background: #25283c;
+
+	.main-wrapper{
+		background: #25283c;
+	}
+
+	.footer_menu{
+
+		.sub-menu{
+			display: none;
+		}
+		
+		li{
+			width: 50%;
+			margin-bottom: 19px;
+
+			a{
+				font-family: OpenSans-Regular, sans-serif;	
+				color: #fff;
+				opacity: .3;
+				font-size: 1rem;
+				margin-bottom: 16px;
+				transition: all ease-in .3s;
+
+				&:hover, &:link, &:active, &:visited{
+					text-decoration: none;
+				}	
+
+				&:hover{
+					opacity: 1;
+				}
+
+			}
+		}
+		li:nth-child(1), li:nth-child(2), li:nth-child(3){
+			float: left;
+		}
+		li:nth-child(4), li:nth-child(5), li:nth-child(6){
+			float: right;
+		}
+	}
+
+	.links{
+		margin-top: 50px;
+		max-height: 90px;
+		margin-bottom: 30px;
+
+		.link{
+
+			display: block;
+			color: #43a5d1;
+			font-size: 1rem;
+			margin-bottom: 20px;
+			text-decoration: none;
+			font-family: OpenSans-Regular, sans-serif;
+			opacity: 0.6;
+			transition: all ease-in .3s;
+
+			&:hover, &:link, &:active, &:visited{
+				text-decoration: none;
+			}
+
+			&:hover{
+				opacity: 1;
+			}
+
+		}
+
+		.link-wrap{
+			font-family: OpenSans-SemiBold, sans-serif;
+			color: #fff;
+
+		}
+	}
+
+	.icons{
+		margin-top: 14px;
+
+		svg{
+			width: 50px;
+			float: right;
+		}
+
+		#fb-icon{
+
+			.fb-icon{
+				transition: all ease-in .3s;
+			}
+
+			&:hover{
+				.fb-icon{
+					opacity: 1;
+				}
+			}
+		}
+
+		#in-icon{
+
+			.in-icon{
+				transition: all ease-in .3s;
+			}
+
+			&:hover{
+				.in-icon{
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.rights{
+		border-top: 1px solid #3e3d50;
+
+		p{
+
+			text-align: left;
+			font-family: OpenSans-Regular, sans-serif;
+			font-size: 1rem;
+			color: #fff;
+			opacity: .2;
+			margin: 14px 0;
+
+		}
+	}
+}

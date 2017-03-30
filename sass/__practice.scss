@@ -1,0 +1,45 @@
+.practice{
+	background-color: #f4f5f9;
+
+	.main-wrapper{
+		background-color: #f4f5f9;
+	}
+
+	.overall__logo{
+		margin-bottom: 35px;
+	}
+	
+	&__content{
+
+		margin-bottom: 65px;
+		font-family: OpenSans-SemiBold, sans-serif;
+
+		p{
+			font-size: 1rem;
+			line-height: 1.625rem;
+		}
+
+		ul{
+			
+			li{
+				list-style-type: disc;
+				font-size: 1rem;
+				line-height: 1.625rem;
+				margin-left: 45px;
+			}
+		}
+	}
+	
+	a{
+		display: inline-block;
+
+		&:hover, &:visited, &:link, &:active{
+			text-decoration: none !important;
+		}
+
+		.practice-link{
+			color: #f15135;
+			text-decoration: none !important;
+		}
+	}
+}

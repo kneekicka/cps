@@ -1,0 +1,152 @@
+.slider-wrapper{
+	min-width: 960px;
+	overflow: hidden;
+}
+.slider{
+	height: 320px;
+	min-width: 100%;
+
+	&__item{
+		height: 320px;
+		width: 100%;
+		position: relative;
+
+		p{
+			font-family: OpenSans-SemiBold, sans-serif;
+			font-size: 2.875rem;
+			line-height: 4.125rem;
+			color: #fff;
+			position: absolute;
+			top: 92px;
+			z-index: 2;
+			width: 800px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		img{
+			min-width: 960px;
+			width: 100%;
+		}
+	}
+
+	&__content-wrapper{
+		position: relative;
+		width: 960px;
+		display: block;
+		margin: 0 auto;
+		padding: 0 30px;
+	}
+
+	&__link{
+
+		text-transform: uppercase;
+		position: relative;
+		font-size: 1.125rem;
+		font-family: OpenSans-Bold, sans-serif;
+		color: #fff;
+		top: 230px;
+		z-index: 2;
+		padding: 18px 25px;
+		position: absolute;
+		background-color: $red;
+		border-radius: 5px;
+		text-decoration: none;
+		box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.1);
+		transition: all ease-in .3s;
+		width: 152px;
+    	text-align: center;
+
+		&:hover{
+			background-color: #e23618;
+		}
+
+		&:active{
+			background-color: #c12b11;
+		}
+
+		&:hover, &:link, &:focus, &:visited{
+			text-decoration: none;
+			color: #fff;
+		}
+
+	}
+
+	.slick-list{
+		height:320px;
+	}
+
+	.slick-dots{
+		position: relative;
+		width: 960px;
+    	text-align: right;
+    	margin: 0 auto;
+		bottom: 60px;
+		padding-right: 20px;
+
+		li{
+			margin-left: 18px;
+			position: relative;
+		    display: inline-block;
+		    width: 20px;
+		    height: 20px;
+		    margin: 0 5px;
+		    padding: 0;
+		    cursor: pointer;
+
+			&:first-of-type{
+				margin-left: 0;
+			}
+
+			button{
+			    font-size: 0;
+			    line-height: 0;
+			    display: block;
+			    width: 20px;
+			    height: 20px;
+			    padding: 5px;
+			    cursor: pointer;
+			    color: transparent;
+			    border: 0;
+			    outline: none;
+			    background: transparent;
+
+			    &:before{
+				    line-height: 20px;
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    width: 10px;
+				    height: 10px;
+				    text-align: center;
+				    opacity: .5;
+				    background-color: #fff;
+				    border-radius: 50%;
+				    content: "";
+				    -webkit-font-smoothing: antialiased;
+				    transition: all ease-in .3s;
+				    margin: 5px 0;
+			    }
+			}
+
+			&.slick-active{
+
+				button{
+
+					&:before{
+						opacity: 1;
+						content: "";
+						background-color: #fff;
+						border-radius: 3px;
+						margin: 0;
+						width: 20px;
+						height: 20px;
+						margin-left: -5px;
+
+					}
+
+				}
+			}
+		}
+	}
+}
